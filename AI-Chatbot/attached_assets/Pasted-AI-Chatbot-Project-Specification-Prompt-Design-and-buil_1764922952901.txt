@@ -1,0 +1,48 @@
+AI Chatbot Project Specification Prompt"Design and build a production-ready, cross-platform AI Chatbot app matching ChatGPT/Perplexity aesthetics with these exact specifications:🎯 Core Functionality- Cross-platform: Desktop (Tauri/Electron) + Mobile PWA (installable)
+- 100% LOCAL: No external servers, all data stored on device (IndexedDB/SQLite)
+- Context-aware conversations: Remembers chat history, links follow-up questions
+- Real-time search: Wikipedia API + DuckDuckGo Instant Answer + free SerpAPI tier
+- Lightweight local LLM: Phi-3-mini (ONNX.js) for offline responses
+- Multi-user support: Separate chat partitions per user💎 UI/UX Design System (Minimal White/Black + Purple)Primary: #FFFFFF (white text), #0A0A0F (deep black bg)
+Secondary: #1E1E2E (glassmorphism dark), #F8FAFC (white glass)
+Accent: #8B5CF6 (purple primary), #A78BFA (purple light), #EC4899 (pink accent)
+Borders: #3730A3 (purple subtle), #E2E8F0 (white subtle)
+
+Glassmorphism: rgba(255,255,255,0.08) + backdrop-blur(20px) + border 1px rgba(255,255,255,0.12)
+Typography: Inter font (400,500,600) - ultra clean
+Animations: slideIn 0.3s, hover:scale-105, typing indicators✅ Free Tier (200 Messages Limit)- Basic chat UI (ChatGPT-style: input + messages)
+- Local storage + auto-naming chats ("India Chat", "Python Help")
+- Context tracking (India → "its history" → smart response)
+- Chat export (JSON), multi-chat sidebar
+- Message counter: 0/200 → Pro modal at 180+🚀 Pro Features (₹99 Lifetime - Razorpay/UPI)- ✅ Unlimited messages
+- ✅ Voice input/output (Web Speech API)
+- ✅ Offline mode (local LLM fallback)
+- ✅ Admin panel (user analytics, logs, multi-user mgmt)
+- ✅ Advanced search (real Wikipedia + DuckDuckGo APIs)
+- ✅ Theme toggle (dark/light/purple)
+- ✅ Chat sharing (P2P WebRTC links)
+- ✅ Priority responses + custom personas🏗️ Tech Stack (Production Ready)Frontend: React/Vue + TailwindCSS + Dexie.js (IndexedDB)
+Backend: Node.js Fastify (local server port 3000)
+Local LLM: Transformers.js + Phi-3-mini ONNX
+APIs: Wikipedia, DuckDuckGo Instant Answer, SerpAPI free
+Payments: Razorpay JS SDK + UPI deep links
+Packaging: Tauri (desktop) + PWA manifest (mobile)📱 Mobile-First Interface- Perfect touch targets (48px min)
+- Swipe gestures (close sidebar, quick actions)
+- PWA install prompt + fullscreen
+- Voice button always visible
+- Haptic feedback + native feel🔐 Admin Panel (Password Protected)- Multi-user dashboard (chat stats, session time)
+- Server logs viewer + export
+- User management + password resets
+- Email logs (nodemailer to your admin email)
+- Analytics charts (Chart.js)💰 Monetization (₹99 Lifetime)- Razorpay integration (cards + UPI)
+- UPI deep links (PhonePe/Paytm/Google Pay)
+- Pro badge + feature teasers in free responses
+- 200 free messages → irresistible upgrade flow🧪 Phased DevelopmentPhase 1: Chat UI + Local Storage + Pro System ✅ (HTML/JS complete)
+Phase 2: Local Server + Real Search APIs
+Phase 3: Admin Panel + Multi-User
+Phase 4: Tauri Desktop + Phi-3 LLM
+Phase 5: Mobile PWA + Voice + PolishGenerate complete production code following this exact spec. UI must be ultra-minimal like Pinterest pin: black background, white text, purple accents, glassmorphism effects. Make it feel premium like ChatGPT Pro but local-first. Include full Razorpay integration ready for live deployment."
+
+Few things I like to change and discuss,that are mentioned in this prompt 
+I add a subscription based system in it don't over advertise it and make 200 questions into 100 chats ,a user may able to make chats upto 100 and then need to pay ₹99 to able to make unlimited chats , don't over advertise this paying system and discuss few things that u want if needed
+I expect it me similar to chatgpt and perplexity, make both mobile based and desktop based at one time and don't follow the phase pattern make the app in one go
